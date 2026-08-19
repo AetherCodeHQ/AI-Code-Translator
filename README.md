@@ -23,12 +23,12 @@ Every developer needs ai code translator — but existing tools are either too c
 
 ## Features
 
-- **Translate between 10+ programming languages** — Translate between 10+ programming languages
-- **Preserves code logic and structure** — Preserves code logic and structure
-- **Context-aware translations** — Context-aware translations
-- **Batch conversion support** — Batch conversion support
-- **Side-by-side diff view** — Side-by-side diff view
-- **Fully offline with local LLMs** — Fully offline with local LLMs
+- Translate between 10+ programming languages
+- Preserves code logic and structure
+- Context-aware translations
+- Batch conversion support
+- Side-by-side diff view
+- Fully offline with local LLMs
 
 ## Quick Start
 
