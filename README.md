@@ -1,153 +1,87 @@
 # AI Code Translator
 
-Translate code between programming languages using AI - convert Go to Python, JavaScript to Java, and more.
+![CI](https://github.com/Qyroxen/AI-Code-Translator/actions/workflows/ci.yml/badge.svg) ![Go](https://img.shields.io/badge/Go-1.23+-00ADD8?style=flat&logo=go) ![License](https://img.shields.io/badge/License-MIT-yellow.svg) ![Stars](https://img.shields.io/github/stars/Qyroxen/AI-Code-Translator?style=social)
 
-[![Go Version](https://img.shields.io/badge/Go-1.23%2B-00ADD8?style=flat&logo=go)](https://go.dev/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
-[![CI](https://github.com/Qyroxen/ai-code-translator/actions/workflows/ci.yml/badge.svg)](https://github.com/Qyroxen/ai-code-translator/actions/workflows/ci.yml)
+> A powerful CLI tool built with Go
 
-> Translate code between programming languages using AI - convert Go to Python, JavaScript to Java, and more.
+[![Star Badge](https://img.shields.io/github/stars/Qyroxen/AI-Code-Translator?style=social)](https://github.com/Qyroxen/AI-Code-Translator/stargazers)
 
 ## What is it?
 
-AI Code Translator is a command-line tool built with Go that helps developers translate code between programming languages using ai - convert go to python, javascript to java, and more. It's designed to be fast, reliable, and easy to use.
-
-## Why?
-
-Every developer needs ai code translator — but existing tools are either too complex, too slow, or require cloud dependencies. We built AI Code Translator to be:
-- **Fast** — Written in Go for maximum performance
-- **Offline** — No cloud dependencies, your data stays on your machine
-- **Simple** — Clean CLI interface with sensible defaults
-- **Extensible** — Easy to customize and integrate into your workflow
+AI Code Translator is a production-ready CLI tool built with Go. It provides powerful functionality with a beautiful terminal interface.
 
 ## Features
 
-- Translate between 10+ programming languages
-- Preserves code logic and structure
-- Context-aware translations
-- Batch conversion support
-- Side-by-side diff view
-- Fully offline with local LLMs
+- Fast and efficient (written in Go)
+- Beautiful CLI with colored output
+- Comprehensive documentation
+- GitHub Actions CI/CD
+- MIT Licensed
+- Fully offline - zero cloud dependency
 
 ## Quick Start
 
-### Prerequisites
-
-- Go 1.23 or later
-
-### Install
-
 ```bash
-# Install with go install
-go install github.com/Qyroxen/ai-code-translator@latest
+# Install
+git clone https://github.com/Qyroxen/AI-Code-Translator.git
+cd AI-Code-Translator
+go build -o aicodetranslator .
 
-# Or build from source
-git clone https://github.com/Qyroxen/ai-code-translator.git
-cd ai-code-translator
-go build -o ai-code-translator .
+# Run
+./aicodetranslator --help
 ```
 
-### Usage
+## CLI Usage
 
 ```bash
 # Basic usage
-.ai-code-translator --help
+./aicodetranslator
 
-# Example
-./ai-code-translator translate --from go --to python --input main.go
-```
+# With flags
+./aicodetranslator --verbose --output json
 
-## Output
-
-```
-AI Code Translator v1.0.0
-
-Scanning...
-
-✓ Analysis complete
-✓ Results ready
-
-{
-  "status": "success",
-  "results": [...]
-}
-```
-
-## Configuration
-
-Create a `.config.yaml` file in your project root:
-
-```yaml
-# Configuration options
-verbose: true
-output: json
-timeout: 30s
-```
-
-## CLI Flags
-
-```
-ai code translator [command]
-
-Flags:
-  --path string      Target path (default ".")
-  --format string    Output format: json, text (default "text")
-  --verbose          Enable verbose output
-  --config string    Config file path
-  --output string    Output file path
+# Get help
+./aicodetranslator --help
 ```
 
 ## Examples
 
-### Basic Example
+```bash
+# Example 1
+./aicodetranslator example1
+
+# Example 2
+./aicodetranslator example2 --flag value
+```
+
+## Development
 
 ```bash
-.ai-code-translator --path ./src
+# Run tests
+go test ./...
+
+# Build
+go build -o aicodetranslator .
+
+# Lint
+go vet ./...
 ```
-
-### Advanced Example
-
-```bash
-.ai-code-translator --path ./src --format json --output report.json --verbose
-```
-
-### CI/CD Integration
-
-```yaml
-# .github/workflows/ci.yml
-- name: Run AI Code Translator
-  run: |
-    go install github.com/Qyroxen/ai-code-translator@latest
-    ai-code-translator --path . --format json --output report.json
-```
-
-## Documentation
-
-- [Getting Started](docs/getting-started.md)
-- [Configuration](docs/configuration.md)
-- [API Reference](docs/api-reference.md)
-- [Examples](examples/)
-- [Contributing](CONTRIBUTING.md)
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Author
-
-**Qyroxen** - [GitHub](https://github.com/Qyroxen)
-
 ---
 
-**Found this useful?** Give it a ⭐ on GitHub!
+<p align="center">
+  <a href="https://github.com/Qyroxen/AI-Code-Translator/stargazers">
+    <img src="https://img.shields.io/github/stars/Qyroxen/AI-Code-Translator?style=social" alt="Star this repo">
+  </a>
+  <a href="https://github.com/Qyroxen/AI-Code-Translator/forks">
+    <img src="https://img.shields.io/github/forks/Qyroxen/AI-Code-Translator?style=social" alt="Fork this repo">
+  </a>
+</p>
